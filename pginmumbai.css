@@ -1,0 +1,111 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #00C2CB;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #ffffff;
+    
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar input {
+    padding: 5px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 3px solid rgb(135, 130, 130);
+    width: 250px;
+    position: absolute;
+    left: 40%;
+}
+
+.search-bar button {
+    background-color: transparent;
+    border: none;
+    font-size: 18px;
+    margin-left: 5px;
+    cursor: pointer;
+    position: absolute;
+    left: 58%;
+}
+
+.bx-bell, .filters-button {
+    background-color: #00C2CB;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 5px;
+    position: relative;
+    right: 30px;
+}
+
+.pg-listings {
+    padding: 20px;
+}
+
+.pg-item {
+    display: flex;
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.pg-item img {
+    width: 450px;
+    height: 350px;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.pg-info {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 92px;
+    left: 30px;
+}
+
+.pg-info h2 {
+    margin: 0;
+    font-size: 20px;
+}
+
+.pg-info p {
+    margin: 5px 0;
+}
+
+.price {
+    font-weight: bold;
+    color: green;
+    margin-top: 5px;
+}
+
+.ratings {
+    color: orange;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    background-color: #f0e4ff;
+}
+
+.home-button {
+    background-color: transparent;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}

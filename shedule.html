@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jay Shree PG</title>
+    <link rel="stylesheet" href="shedule.css">
+</head>
+<body>
+    <header>
+        <h2>Jay Shree PG</h2>
+    </header>
+    <div class="container">
+        <div class="main-section">
+            <div class="buttons">
+                <p id="scheduleBtn" style="font-size: larger;margin: 10px; padding: 10px; "> <b>Schedule Visit </b></p>
+            </div>
+
+            <div class="visit-form">
+                <label for="visit-date">When are you planning to visit?</label>
+                <div class="date-options">
+                    <button class="date-option">01 Nov Sat</button>
+                    <button class="date-option">02 Nov Sun</button>
+                    <button class="date-option">03 Nov Mon</button>
+                    <button class="date-option">04 Nov Tue</button>
+                </div>
+                <div class="select-date">
+                    <input type="date" id="custom-date">
+                </div>
+
+                <label for="time-slot">What is your preferred time slot?</label>
+                <div class="time-options">
+                    <button class="time-slot">9-12 PM</button>
+                    <button class="time-slot">12-3 PM</button>
+                    <button class="time-slot">3-6 PM</button>
+                    <button class="time-slot">6-9 PM</button>
+                </div>
+                <div class="time-slot">
+                    <input type="checkbox" id="cant-tell" name="cant-tell">
+                    <label for="cant-tell">Can't tell right now</label>
+                </div>
+            </div>
+
+            <button class="confirm-btn">Confirm</button>
+        </div>
+    </div>
+
+    <script src="shedule.js"></script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jay Shree PG</title>
+    <link rel="stylesheet" href="jayshreepg.css">
+    <style>
+        .nearby-options, .doctors-list, .grocery-list {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header></header>
+
+        <div class="pg-container">
+            <div class="pg-image">
+                <img src="pg1.jpg" alt="PG Image">
+            </div>
+            <div class="pg-info">
+                <h1 style="text-align: center;">Jay Shree PG</h1><br><br>
+                <p>A PG in Indore name Jay Shree PG. There's only one winner. The fully-furnished PG is not just a place to stay in. 
+                    It's your second home. It is so because all your needs are taken care of over here, just like they were back at home.
+                    Housekeeping, high-speed internet and more, we've got it all, unlike a typical PGs with limited amenities. 
+                    Schedule a visit and see first-hand what makes it a second home. We're sure you'll be won over too.</p><br>
+                <div class="price">Price: Rs. 5000 / month</div><br>
+                <div class="rating">Rating: ★★★★☆</div>
+                <div class="buttons">
+                    <button class="schedule-visit"><a href="shedule.html" style="text-decoration: none; color: white;">Schedule a Visit</a></button>
+                    <button class="reserve"><a href="reservenow.html" style="text-decoration: none;color: white;">Reserve Now</a></button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Amenities and Services -->
+        <section class="amenities-services">
+            <div class="tabs">
+                <button id="amenities-btn" class="active">Amenities</button>
+                <button id="nearby-btn">Nearby</button>
+            </div>
+
+            <!-- Amenities Section -->
+            <div class="amenities">
+                <h3>Amenities</h3>
+                <ul>
+                    <li><img src="fridge-icon.jpg" alt="Refrigerator"> Refrigerator</li>
+                    <li><img src="washroom-icon.jpg" alt="Attached Washroom"> Attached Washroom</li>
+                    <li><img src="studytable-icon.png" alt="Study Table"> Study Table</li>
+                </ul>
+            </div>
+
+            <div class="services">
+                <h3>Services</h3>
+                <ul>
+                    <li><img src="gym-icon.png" alt="Workout Gym"> Workout Gym</li>
+                    <li><img src="washing-machine-icon.png" alt="Washing Machine"> Washing Machine</li>
+                    <li><img src="meal-icon.png" alt="Delicious Meals"> Delicious Meals</li>
+                    <li><img src="hot-water-icon.png" alt="Hot Water Supply"> Hot Water Supply</li>
+                </ul>
+            </div>
+
+            <!-- Nearby Section -->
+            <div class="nearby-options">
+                <h3>Nearby</h3>
+                <button id="doctors-btn">Doctors/Clinics </button>
+                <ul class="doctors-list">
+                    <li>Dr. Sharma's Clinic</li>
+                    <li>Indore Health Center</li>
+                    <li>Medicare Clinic</li>
+                </ul>
+
+                <button id="grocery-btn">Grocery Shops </button>
+                <ul class="grocery-list">
+                    <li>Reliance Fresh</li>
+                    <li>Big Bazaar</li>
+                    <li>Local Market</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Food Options -->
+        <div>
+            <button class="food-menu">
+                Food Options/Food Menu
+                <span></span>
+            </button>
+            <img src="foodmenu.jpg" style="height: 500px; padding: 10px;">
+        </div>
+    </div>
+
+    <script src="jayshreepg.js"></script>
+</body>
+</html>

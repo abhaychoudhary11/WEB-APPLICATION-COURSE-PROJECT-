@@ -1,0 +1,319 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #00C2CB;
+    color: #333;
+}
+
+.login-btn {
+    align-items:baseline;
+    padding: 10px 20px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+    line-height: 20px;
+}
+
+.signup-btn {
+    align-items:baseline;
+    padding: 10px 20px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+    line-height: 20px;
+}
+
+.bx-bell {
+    font-size: 34px;
+    padding: 10px;
+    cursor: pointer;
+    line-height: 20px;
+    position: relative;
+    left: 2%;
+}
+
+.icons {
+    display: flex;
+    gap: 10px;
+}
+
+.icon {
+    font-size: 20px;
+    color: #333;
+}
+
+.advertisement {
+    padding: 20px;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    gap: 0px;
+    border: 0px solid black;
+    justify-content: flex-start;
+    overflow: hidden;
+}
+.adimage {
+    background-color: #00C2CB;
+    transition: opacity 0.6s ease;
+    cursor: pointer;
+    
+    animation: scrollAd 18s linear infinite;
+}
+.adimage:hover{
+    opacity: 0.5;
+}
+.advertisement img {
+    margin: 10px;
+    padding: 10px;
+    height: 500px;
+    border-radius: 10px;
+}
+
+.ad-text {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #024145;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.suggestions {
+    padding: 20px;
+}
+
+.suggestions h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;  
+    text-align: center;  
+}
+
+.pg-cards {
+    display: flex;
+    gap: 15px;
+    justify-content: space-around;
+}
+
+.pg-card {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 10px;
+    width: 30%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+.pg-card a{
+    text-decoration: none;
+    color: black;
+}
+.pg-card img {
+    display: block;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.pg-title {
+    font-weight: bold;
+    margin-top: 10px;
+    font-size: 1.2rem;
+}
+
+.location {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.price {
+    font-size: 1rem;
+    color: #ff5c33;
+}
+
+.offers {
+    background-color: #f5d5cb;
+    padding: 20px;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.offer-banner {
+    padding: 50px;
+    background-color: #f5d5cb;
+    border-radius: 10px;
+    border: 2px dashed #ff5c33;
+    color: #333;
+    font-size: 1.5rem;
+}
+
+.offer-banner strong {
+    color: #ff5c33;
+}
+
+footer {
+    background-color: #333;
+    color: #333;
+    padding: 40px 0;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 0 20px;
+}
+
+.footer-section {
+    width: 200px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.footer-section h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.footer-section ul {
+    list-style: none;
+}
+
+.footer-section ul li {
+    margin-bottom: 8px;
+}
+
+.footer-section ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+    text-decoration: underline;
+}
+
+.social-links li {
+    display: inline-block;
+    margin-right: 10px;
+    color:#fff
+}
+
+.social-links a{
+    color: white;
+}
+.footer-bottom {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.legal-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.legal-links li {
+    margin: 0 15px;
+}
+
+.legal-links li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.legal-links li a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom p {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+@keyframes scrollAd {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-300%);
+    }
+  }
+
+
+
+
+
+/* Adjust header content */
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    gap: 30px;
+    position: relative; /* Added for positioning filter menu */
+}
+
+.search-bar {
+    flex: 1;
+    max-width: 600px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); 
+}
+
+.filter-icon {
+    margin-right: 10px; /* Ensures filter button is to the left of search bar */
+}
+
+.filter-icon button {
+    background-color: #2d3436;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.filter-icon button:hover {
+    background-color: #3e4246;
+}
+
+.filter-menu {
+    display: none; /* Hidden by default */
+    position: absolute;
+    top: 70px; /* Adjust this value based on the height of your header */
+    left: 250px; /* Aligns with the filter button */
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    width: 300px;
+}
+
+.filter-menu h3, .filter-menu h4 {
+    margin: 10px 0;
+}
+
+.apply-btn {
+    background-color: #55efc4;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+}
+
+/* Show filter menu when filter button is clicked */
+.filter-menu.show {
+    display: block;
+}

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day care PG</title>
+    <link rel="stylesheet" href="daycare.css">
+    <style>
+        /* Hide the nearby section initially */
+        .nearby-options, .doctors-list, .grocery-list {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header>
+        <div class="header-content">
+            <input type="text" class="search-bar" placeholder="Search...">
+            <a href="login.html"><button class="login-btn">Sign Up</button></a>
+        </div>
+        </header>
+
+        <div class="pg-container">
+            <div class="pg-image">
+                <img src="pg2.jpg" alt="PG Image">
+            </div>
+            <div class="pg-info">
+                <h1 style="text-align: center;">Day Care PG</h1><br><br>
+                <p>A well-known chain offering fully-furnished co-living spaces with a home-like atmosphere. Their PGs come with all-inclusive services such as housekeeping,
+                    high-speed Wi-Fi, laundry, meals, and 24/7 security. They have several locations in Indore, including areas like Vijay Nagar and Rau, with options for both 
+                    single and shared occupancies. Their PGs tend to focus on making the experience more modern and comfortable than typical PG setups</p><br>
+                <div class="price">Price: Rs. 5000 / month</div><br>
+                <div class="rating">Rating: ★★★★☆</div>
+                <div class="buttons">
+                    <button class="schedule-visit"><a href="shedule.html" style="text-decoration: none; color: white;">Schedule a Visit</a></button>
+                    <button class="reserve"><a href="reservenow.html" style="text-decoration: none; color: white;">Reserve Now</a></button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Amenities and Services -->
+        <section class="amenities-services">
+            <div class="tabs">
+                <button id="amenities-btn" class="active">Amenities</button>
+                <button id="nearby-btn">Nearby</button>
+            </div>
+
+            <!-- Amenities Section -->
+            <div class="amenities">
+                <h3>Amenities</h3>
+                <ul>
+                    <li><img src="parking-icon.png" alt="Parking">Parking</li>
+                    <li><img src="fridge-icon.jpg" alt="Refrigerator"> Refrigerator</li>
+                    <li><img src="washroom-icon.jpg" alt="Attached Washroom"> Attached Washroom</li>
+                    <li><img src="studytable-icon.png" alt="Study Table"> Study Table</li>
+                    <li><img src="study-chair-icon.png" alt="Chair"> Chair</li>
+                </ul>
+            </div>
+
+            <div class="services">
+                <h3>Services</h3>
+                <ul>
+                    <li><img src="housekeeping-icon.png" alt="Housekeeping"> Housekeeping</li>
+                    <li><img src="gym-icon.png" alt="Workout Gym"> Workout Gym</li>
+                    <li><img src="washing-machine-icon.png" alt="Washing Machine"> Washing Machine</li>
+                    <li><img src="meal-icon.png" alt="Delicious Meals"> Delicious Meals</li>
+                    <li><img src="hot-water-icon.png" alt="Hot Water Supply"> Hot Water Supply</li>
+                    <li><img src="247-electricity-icon.png" alt="Electricity"> 24/7 Electricity</li>
+                </ul>
+            </div>
+
+            <!-- Nearby Section -->
+            <div class="nearby-options">
+                <h3>Nearby</h3> <br>
+                <div id="doctors-btn" style="text-align: center; font-size: larger; padding: 17px; margin: 10px;"><b>Doctors/Clinics</b></div> 
+                <div class="clinicss">
+                    <a href="#"><p>Indore Health Center</p></a>
+                    <a href="#"><p>Medicare Clinic</p></a>
+                    <a href="#" style="position: relative; left: 40px;"><p>Dr. Sharma's Clinic</p></a> 
+                </div>
+                    <div class="hospitals" style=" display: flex; gap: 60px;">
+                        <img src="https://img.freepik.com/premium-photo/healthcare-facility-design-efficient-hospitals-clinics-patient-care_1168612-333966.jpg?size=626&ext=jpg" style="height: 333px; width: 444px;">
+                        <img src="https://imgs.search.brave.com/e_F-a53knEmWolBAGTkum4C8tSl0cn_MABnHY7_cqr4/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9mcGlt/YWdlcy53aXRoZmxv/YXRzLmNvbS9hY3R1/YWwvNjE5MzYzMDM3/ZGI2NTIwMDAxYjk1/NDQxLmpwZw" style="height: 333px; width: 444px;">
+                        <img src="https://media.istockphoto.com/id/941762276/photo/doctors-walking-in-clinic.jpg?s=612x612&w=0&k=20&c=OwsH-lT88akwiPOYm1kTVs6c7mXHBUDgUbnQuCssyyg=" style="height: 333px; width: 444px;">
+                </div>
+                <div id="grocery-btn" style="text-align: center; font-size: larger; padding: 17px; margin: 10px;"><b>Grocery Shops</b> </div>
+                <div class="gocery">
+                    <a href=""><p>Reliance Fresh</p></a>
+                    <a href=""><p>Big Bazaar</p></a>
+                    <a href="" style="position: relative; left: 30px;"><p>Local Market</p></a>
+                </div>
+                <div class="shopss" style=" display: flex; gap: 60px;">
+                    <img src="https://bigbazaar.com.co/wp-content/uploads/2023/12/Big-Bazaar.webp" style="height: 333px; width: 444px;">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Reliance_Mart,_ISCON_Mall,_Ahmedabad.jpg" style="height: 333px; width: 444px;">
+                    <img src="https://media.gettyimages.com/id/172909649/photo/quaint-neighborhood-market.jpg?s=612x612&w=0&k=20&c=dzxTROgpAqXxBWqA_L5TKsmz6XmWJ4viBvrW5NMjeY0=" style="height: 333px; width: 444px;">
+                </div>
+            </div>
+        </section>
+
+        <!-- Food Options -->
+        <div>
+            <button class="food-menu">
+                Food Options/Food Menu
+                
+            </button>
+            <img src="foodmenu.jpg" style="height: 500px; padding: 10px;">
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <!-- Contact Us Section -->
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <ul>
+                    <li>Email: <a href="mailto:info@pglistings.com">info@pglistings.com</a></li>
+                    <li>Phone: +91 98765 43210</li>
+                    <li>Address: 123, PG Street, New Delhi, India</li>
+                </ul>
+            </div>
+    
+            <!-- Quick Links Section -->
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">FAQs</a></li>
+                </ul>
+            </div>
+    
+            <!-- Follow Us Section -->
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <ul class="social-links">
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">LinkedIn</a></li>
+                </ul>
+            </div>
+    
+            <!-- Popular Cities Section -->
+            <div class="footer-section">
+                <h3>Popular Cities</h3>
+                <ul>
+                    <li><a href="#">PG in Delhi</a></li>
+                    <li><a href="#">PG in Mumbai</a></li>
+                    <li><a href="#">PG in Bangalore</a></li>
+                    <li><a href="#">PG in Pune</a></li>
+                </ul>
+            </div>
+    
+            <!-- App Links Section -->
+            <div class="footer-section">
+                <h3>Download Our App</h3>
+                <ul>
+                    <li><a href="#">Google Play</a></li>
+                    <li><a href="#">App Store</a></li>
+                </ul>
+            </div>
+        </div>
+    
+        <!-- Legal & Copyright Section -->
+        <div class="footer-bottom">
+            <ul class="legal-links">
+                <li><a href="#">Terms & Conditions</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Refund Policy</a></li>
+            </ul>
+            <p>&copy; 2024 PG Listings. All rights reserved.</p>
+        </div>
+    </footer>
+    
+    <script src="jayshreepg.js"></script>
+</body>
+</html>
